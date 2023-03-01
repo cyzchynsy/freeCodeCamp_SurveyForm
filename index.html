@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Computer Science Students Form</h1>
+    <p id="description">Please fill out necessary information if you are a Computer Science Student.</p>
+    <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name <input id="name" name="name" type="text" placeholder="Juan De La Cruz" required /></label>
+        <label for="email" id="email-label">Email <input id="email" name="email" type="email" placeholder="name@example.com" required /></label>
+        <label for="number" id="number-label">Age <input id="number" name="number" type="number" min="15" max="60" placeholder="19" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="first-choice"><input id="personal-account" type="radio" name="account-type" class="inline" value="1" /> This is my first choice.</label>
+        <label for="business-account"><input id="second-choice" type="radio" name="account-type" class="inline" value="2"/> This is my second choice.</label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="Accepted" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <label for="referrer">What path do you want to take?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Software Engineering</option>
+            <option value="2">Data Science</option>
+            <option value="3">Machine Learning</option>
+          </select>
+        <label> Which language/s do you want to learn?
+          <label class="container">C
+            <input type="checkbox" value="C">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Python
+            <input type="checkbox" value="Python">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Java
+            <input type="checkbox"  value="Java">
+            <span class="checkmark"></span>
+          </label>
+        </label>
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </body>
+</html>
